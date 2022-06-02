@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/ChiefSlider/chief-slider.min.css">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script defer src="static/ChiefSlider/chief-slider.min.js"></script>
+	<script src="static/js/dropdown.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var elms = document.querySelectorAll('.slider');
+			for (var i = 0, len = elms.length; i < len; i++) {
+				new ChiefSlider(elms[i]);
+				}
+			});
+  	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="site-logo">
+			<div class="logo">
+				<a href="#">
+					<img src="static/img/logo.png" class="logo-img">
+				</a>
+			</div>
+		</div>
+		<div class="header-menu-list">
+			<div class="menulist">
+				<div class="search-module_">
+					<span class="search">
+						<form>
+							<div class="search_wrapper">
+								<input class="search_input" maxlength="150" placeholder=" Поиск" name="а">
+								<button class="search_btn" type="submit">Найти</button>
+							</div>
+						</form>
+					</span>
+				</div>
+			</div>
+			<div class="add-menu">
+				<a href="#" class="pr-links active">Главная</a>
+				<a href="#" class="pr-links">Книги</a>
+				<a href="#" class="pr-links">Аудиокниги</a>
+				<a href="#" class="pr-links">Статьи</a>
+				<a href="#" class="pr-links">Подкасты</a>
+				<a href="about_us.html" class="pr-links">О нас</a>
+				<a href="contact.html" class="pr-links">Контакты</a>
+				<a href="#" class="pr-links">Доставка и оплата</a>
+			</div>
+		</div>
+		<div class="user-full">
+			<div class="basket">
+				<a href="#" class="basket-link">
+					<img src="static/img/basket.png" class="basket-img">
+				</a>
+			</div>
+			<div class="user-info">
+				<div class="dropdown">
+					<button onclick="myFunction()" class="drop_btn"></button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">Профиль</a>
+						<a href="#">Мои заказы</a>
+						<a href="#">Ввести промокод</a>
+						<a href="#">Программа лояльности</a>
+						<a href="#">Библиотека</a>
+						<a href="#">Стать автором</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="advertising-middle">
+			<img src="static/img/advertising/222.png">
+		</div>
+		<div class="stock-literature">
+			<h3>Акции: </h3>
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__wrapper">
+						<div class="slider__items">
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/sales/alaya.jpg">
+									<h4>Алая чума до Адама</h4>
+									<p>Джек Лондон</p>
+									<h6>399 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/sales/dama.jpg">
+									<h4>Дама с Камелиями</h4>
+									<p>Александр Дюма</p>
+									<h6>299 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+					  			<div class="block">
+									<img src="static/img/books/sales/brats.jpg">
+									<h4>Братья Карамазовы</h4>
+									<p>Федор Михайлович Достоевский</p>
+									<h6>499 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+					  			<div class="block">
+									<img src="static/img/books/sales/little.jpg">
+									<h4>Маленькая хозяйка большого дома</h4>
+									<p>Джек Лондон</p>
+									<h6>499 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+					  			<div class="block">
+									<img src="static/img/books/sales/ducks.jpg">
+									<h4>Утиная охота</h4>
+									<p>Александр Валентинович Вампилов</p>
+									<h6>299 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+					  			<div class="block">
+									<img src="static/img/books/sales/master.jpg">
+									<h4>Мастер и Маргарита</h4>
+									<p>Михаил Афанасьевич Булгаков</p>
+									<h6>299 руб</h6>
+									<span class="sale">-40%</span>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="slider__control" data-slide="prev"></a>
+				<a href="#" class="slider__control" data-slide="next"></a>
+			</div>
+		</div>
+		<div class="popular-literature">
+			<h3>Популярное: </h3>
+			<div class="slider">
+	  			<div class="slider__container">
+					<div class="slider__wrapper">
+						<div class="slider__items">
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/anna.jpg">
+									<h4>Анна Каренина</h4>
+									<p>Лев николаевич Толстой</p>
+									<h6>299 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/kap.jpg">
+									<h4>Капитанская дочка</h4>
+									<p>Александр Сергеевич Пушкин</p>
+									<h6>399 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/otsi.jpg">
+									<h4>Отцы и дети</h4>
+									<p>Иван Сергеевич Тургеньев</p>
+									<h6>399 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/prestupleniye.jpg">
+									<h4>Преступление и наказание</h4>
+									<p>Федор Михайлович Достоевский</p>
+									<h6>599 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/war1.jpg">
+									<h4>Война и мир (книга 1)</h4>
+									<p>Лев Николаевич Толстой</p>
+									<h6>399 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/war2.jpg">
+									<h4>Война и мир (книга 2)</h4>
+									<p>Лев Николаевич Толстой</p>
+									<h6>399 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/dushi.jpg">
+									<h4>Мертвые души</h4>
+									<p>Николай Васильевич Гоголь</p>
+									<h6>499 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/liza.jpg">
+									<h4>Бедная Лиза</h4>
+									<p>Николай Михайлович Карамзин</p>
+									<h6>199 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/melochi.jpg">
+									<h4>Мелочи жизни</h4>
+									<p>Михаил Евграфович Салтыков-Щедрин</p>
+									<h6>299 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/mumu.jpg">
+									<h4>Муму</h4>
+									<p>Иван Сергеевич Тургеньев</p>
+									<h6>399 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="slider__control" data-slide="prev"></a>
+				<a href="#" class="slider__control" data-slide="next"></a>
+			</div>
+		</div>
+		<div class="recommendation">
+			<h3>Рекоммендуем лично вам: </h3>
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__wrapper">
+						<div class="slider__items">
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/povest.jpg">
+									<h4>Повесть о настоящем человеке</h4>
+									<p>Борис Николаевич Полевой</p>
+									<h6>199 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/stepnoy.jpg">
+									<h4>Степной волк</h4>
+									<p>Герман Гёссе</p>
+									<h6>699 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/strannik.jpg">
+									<h4>Странник по звездам</h4>
+									<p>Джек Лондон</p>
+									<h6>499 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/winter.jpg">
+									<h4>Зима тревоги нашей</h4>
+									<p>Джон Стейнбек</p>
+									<h6>699 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/wolk.jpg">
+									<h4>Морской волк</h4>
+									<p>Джек Лондон</p>
+									<h6>299 руб</h6>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="block">
+									<img src="static/img/books/choice/braslet.jpg">
+									<h4>Гранатовый браслет</h4>
+									<h6>99 руб</h6>
+									<p>Александр Иванович Куприн</p>
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Кнопки для перехода к предыдущему и следующему слайду -->
+				<a href="#" class="slider__control" data-slide="prev"></a>
+				<a href="#" class="slider__control" data-slide="next"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-wrapper">
+			 <div class="text-footer">
+				<h3>Контакты</h3>
+				<p>pavel.zabrovsiy@bk.ru</p>
+				<p>8-800-555-35-35</p>
+			</div>
+			<div class="text-footer">
+				<h3>Полезная информация</h3>
+				<div class="social-link">
+					<a href="#" class="s-link">
+						<img src="static/img/social-logo/vk.png">
+						<p>Наш VK</p>
+					</a>
+				</div>
+				<div class="social-link">
+					<a href="#" class="s-link">
+						<img src="static/img/social-logo/telegram.png">
+						<p> Наш Telegam</p>
+					</a>
+				</div>
+			</div>
+			<div class="text-footer">
+				<h3>Оставайтесь на связи</h3>
+				<p>Подписаться на новости и рассылки</p>
+				<form class="mail-form">
+					<img src="static/img/social-logo/mail.png">
+					<input type="email" name="email" placeholder=" ваш email">
+					<a href="#"><i class="em" aria-hidden="true"></i></a>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
